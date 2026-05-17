@@ -51,12 +51,13 @@
 }
 html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bt);color:var(--tp);-webkit-tap-highlight-color:transparent}
 .app{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;background:var(--bt)}
+/* topbar */
 .topbar{background:#C0D0E8;border-bottom:0.5px solid var(--bd);display:flex;align-items:center;padding:0 16px;height:52px;flex-shrink:0;gap:0}
 .logo-title{font-size:14px;font-weight:500;line-height:1.3;color:#304060}
 .logo-sub{font-size:10px;color:var(--ts)}
 .logo-block{margin-right:16px;flex-shrink:0}
 .sep{width:1px;height:20px;background:var(--bd);margin:0 6px;flex-shrink:0}
-.ntab{display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:var(--rm);cursor:pointer;font-size:13px;color:var(--ts);white-space:nowrap;height:36px;border:none;background:none}
+.ntab{display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:var(--rm);cursor:pointer;font-size:13px;color:var(--ts);white-space:nowrap;height:36px;border:none;background:none;color:var(--ts)}
 .ntab:hover{background:var(--bs)}
 .ntab.on{background:var(--bs);color:var(--tp);font-weight:500}
 .ntab svg{opacity:0.5;flex-shrink:0}
@@ -66,14 +67,17 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .av-a{background:#E1F5EE;color:#085041}
 .av-s{background:#EEEDFE;color:#3C3489}
 .uname{font-size:11px;color:var(--ts)}
+/* main */
 .main{flex:1;overflow:hidden;position:relative}
 .pg{display:none;height:100%;overflow-y:auto;padding:0 16px 40px;width:100%;box-sizing:border-box}
 .pg.on{display:block}
+/* bottom nav (mobile) */
 .botbar{display:none;background:var(--bp);border-top:0.5px solid var(--bd);flex-shrink:0}
 .btab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;border:none;background:none;padding:8px 0 10px;color:var(--tt)}
 .btab.on{color:var(--tp)}
 .btab-lbl{font-size:10px;font-weight:400}
 .btab.on .btab-lbl{font-weight:500}
+/* cards */
 .mc{background:var(--bs);border-radius:var(--rm);padding:12px}
 .lbl{font-size:11px;color:var(--ts);margin-bottom:4px}
 .val{font-size:17px;font-weight:500;color:var(--tp)}
@@ -88,6 +92,7 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;display:inline-block}
 .bdg{font-size:10px;padding:2px 7px;border-radius:20px;display:inline-block;margin-top:3px}
 .bd1{background:#EAF0F8;color:#304060}.bd2{background:#F8EEE8;color:#6A4030}.bd3{background:#F1EFE8;color:#444441}
+/* sub-blocks */
 .sb{background:var(--bs);border-radius:var(--rm);padding:9px 11px;margin-top:6px}
 .sg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:6px}
 .sg2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
@@ -97,6 +102,7 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .pb{height:4px;background:var(--bp);border-radius:2px;overflow:hidden;margin-top:4px}
 .pf{height:100%;border-radius:2px;transition:width .3s}
 .ti{font-size:11px;border:0.5px solid var(--bdm);border-radius:4px;padding:2px 5px;background:var(--bp);color:var(--tp);width:100%;text-align:right}
+/* expense layout */
 .exl{display:grid;grid-template-columns:180px 1fr;gap:12px}
 .mtabs{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:12px}
 .mt{font-size:11px;padding:3px 9px;border-radius:20px;border:0.5px solid var(--bdm);cursor:pointer;color:var(--ts);background:var(--bp);white-space:nowrap}
@@ -122,8 +128,10 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .fr{display:flex;justify-content:space-between;padding:4px 0;border-bottom:0.5px solid var(--bd)}
 .fr:last-child{border-bottom:none}
 .yr-badge{display:inline-block;font-size:10px;padding:1px 6px;border-radius:20px;background:#EAF0F8;color:#304060;margin-left:6px;vertical-align:middle}
+/* record */
 .fg{margin-bottom:10px}
 .fl{font-size:11px;color:var(--ts);margin-bottom:4px}
+/* import */
 .uz{border:0.5px dashed var(--bdm);border-radius:var(--rl);padding:28px 16px;text-align:center;margin-bottom:12px;cursor:pointer}
 .uz:hover,.uz:active{background:var(--bs)}
 .ftg{display:flex;gap:5px;justify-content:center;margin-top:8px;flex-wrap:wrap}
@@ -133,6 +141,7 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .ain{flex:1}
 .ain .n{font-size:12px;color:var(--tp)}
 .ain .d{font-size:10px;color:var(--ts);margin-top:1px}
+/* settings */
 .item-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:0.5px solid var(--bd)}
 .item-row:last-child{border-bottom:none}
 .item-name{flex:1;font-size:13px;color:var(--tp)}
@@ -146,424 +155,1003 @@ html,body{height:100%;margin:0;padding:0;font-family:-apple-system,BlinkMacSyste
 .add-row input,.add-row select{font-size:12px;padding:6px 8px;border:0.5px solid var(--bdm);border-radius:var(--rm);background:var(--bp);color:var(--tp)}
 .add-row input{flex:1;min-width:100px}
 .add-row button{font-size:12px;padding:6px 12px;white-space:nowrap}
-.mtl-btn{font-size:11px;padding:4px 9px;border-radius:var(--rm);border:0.5px solid var(--bdm);background:none;cursor:pointer;color:var(--ts);margin-right:6px}
-.mtl-btn.on{background:#98B8D8;color:#fff;border-color:#98B8D8}
-button{border:none;border-radius:var(--rm);background:var(--accent);color:#fff;cursor:pointer;font-weight:500;transition:.2s}
-button:hover{opacity:0.9}
-button:active{opacity:0.85}
-.modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center}
-.modal.on{display:flex}
-.modal-box{background:var(--bp);border-radius:var(--rl);padding:16px;max-width:600px;max-height:80vh;overflow:auto;width:90vw}
-.modal-ttl{font-size:14px;font-weight:500;color:var(--tp);margin-bottom:12px}
-.modal-body{font-size:12px;color:var(--ts);line-height:1.6}
-.tag{display:inline-flex;align-items:center;gap:5px;background:var(--bs);border-radius:20px;padding:4px 10px;margin:3px;font-size:12px}
-.tag-del{cursor:pointer;color:var(--ts);font-weight:bold}
-.tag-del:hover{color:var(--tp)}
-.edit-inline{display:none;flex-gap:8px;padding:8px 0;border-bottom:0.5px solid var(--bd)}
-.edit-inline.on{display:flex;gap:8px;align-items:center}
-.edit-inline input,.edit-inline select{font-size:11px;padding:4px 6px;border:0.5px solid var(--bdm);border-radius:4px;background:var(--bp);color:var(--tp)}
+.edit-inline{display:none;background:var(--bs);border-radius:var(--rm);padding:10px;margin-top:6px;gap:8px;align-items:center;flex-wrap:wrap}
+.edit-inline.on{display:flex}
+.edit-inline input,.edit-inline select{font-size:12px;padding:5px 8px;border:0.5px solid var(--bdm);border-radius:var(--rm);background:var(--bp);color:var(--tp)}
 .edit-inline input{flex:1;min-width:80px}
-.edit-inline button{font-size:11px;padding:4px 8px;white-space:nowrap}
-.txr{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:0.5px solid var(--bd)}
-.txd{width:3px;height:20px;border-radius:1.5px;flex-shrink:0}
-.txi{flex:1;min-width:0}
-.txn{font-size:12px;color:var(--tp);font-weight:500}
-.txdt{font-size:10px;color:var(--ts);margin-top:1px}
-.txa{font-size:12px;color:var(--tp);text-align:right;flex-shrink:0;font-weight:500}
-.cp{width:28px;height:28px;border-radius:var(--rm);cursor:pointer;border:0.5px solid transparent;margin-right:6px}
-.cp.on{border:2px solid var(--tp)}
-@media(min-width:960px){
-  .botbar{display:flex;position:fixed;bottom:0;left:0;right:0;border-top:0.5px solid var(--bd)}
-  .app{min-height:100vh}
-  .main{padding-bottom:48px}
-  .pg{padding:20px 32px 40px}
-  .exl{grid-template-columns:200px 1fr}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 10px;border-radius:20px;margin:3px;border:0.5px solid var(--bd);color:var(--tp);background:var(--bp)}
+.tag-del{cursor:pointer;color:var(--tt);font-size:14px;line-height:1;margin-left:2px}
+.tag-del:hover{color:var(--red)}
+.tags-wrap{display:flex;flex-wrap:wrap;margin:-3px;margin-bottom:8px}
+.cp{width:16px;height:16px;border-radius:50%;cursor:pointer;flex-shrink:0;border:2px solid transparent}
+.cp.on{border-color:var(--tp)}
+.color-pick{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+/* modal */
+.mbg{display:none;position:absolute;inset:0;background:rgba(0,0,0,0.4);z-index:50;align-items:center;justify-content:center}
+.mbg.on{display:flex}
+.mbox{background:var(--bp);border-radius:var(--rl);border:0.5px solid var(--bd);width:320px;max-height:480px;display:flex;flex-direction:column;overflow:hidden}
+.mh{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:0.5px solid var(--bd);flex-shrink:0}
+.mt2{font-size:14px;font-weight:500;color:var(--tp)}
+.mm{font-size:11px;color:var(--ts);margin-top:2px}
+.mcl{font-size:22px;color:var(--ts);cursor:pointer;border:none;background:none;line-height:1;padding:0 4px}
+.mb{overflow-y:auto;padding:8px 16px 16px;flex:1}
+.txr{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:0.5px solid var(--bd)}
+.txr:last-child{border-bottom:none}
+.txd{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.txi{flex:1}
+.txn{font-size:13px;color:var(--tp)}
+.txdt{font-size:11px;color:var(--ts);margin-top:2px}
+.txa{font-size:13px;font-weight:500;color:var(--red);flex-shrink:0}
+.mf{display:flex;justify-content:space-between;padding:10px 16px;border-top:0.5px solid var(--bd);flex-shrink:0}
+/* mobile modal (bottom sheet) */
+.modal-wrap{display:none;position:absolute;inset:0;background:rgba(0,0,0,0.4);z-index:50;align-items:flex-end;border-radius:0}
+.modal-wrap.on{display:flex}
+.mbox-m{background:var(--bp);border-radius:var(--rl) var(--rl) 0 0;width:100%;max-height:75%;display:flex;flex-direction:column;overflow:hidden}
+/* responsive */
+@media(max-width:768px){
+  .desktop-only{display:none!important}
+  .exl{grid-template-columns:1fr}
+  .tc3{grid-template-columns:1fr 1fr}
+  .tc2{grid-template-columns:1fr}
+  .sg{grid-template-columns:1fr 1fr}
+  .pg{padding:0 14px 40px;min-height:calc(100dvh - 52px)}
+  .fc{margin-bottom:10px}
+  .mbg{align-items:flex-end}
+  .mbox{width:100%;max-height:75%;border-radius:var(--rl) var(--rl) 0 0}
+  .add-row{flex-wrap:wrap}
 }
-.bank-tab{font-size:11px;padding:8px 12px;border-radius:var(--rm);border:0.5px solid var(--bdm);cursor:pointer;color:var(--ts);background:var(--bp);white-space:nowrap}
-.bank-tab.on{background:#98B8D8;color:#fff;border-color:#98B8D8}
-.dist-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;padding:8px;background:var(--bs);border-radius:6px}
-.dist-name{font-size:12px;color:var(--ts);width:80px;flex-shrink:0}
-.dist-input{flex:1;padding:6px 8px;border:0.5px solid var(--bdm);border-radius:4px;font-size:11px}
-.dist-pct{font-size:11px;color:var(--tt);width:50px;text-align:right;flex-shrink:0}
+@media(min-width:769px){
+  .hamburger-btn{display:none}
+  .modal-wrap{display:none!important}
+}
+input,select,textarea,button{font-family:inherit}
+input,select{width:100%;padding:8px 10px;border:0.5px solid var(--bdm);border-radius:var(--rm);background:var(--bp);color:var(--tp);font-size:13px}
+button{padding:8px 16px;border:0.5px solid var(--bdm);border-radius:var(--rm);background:var(--bs);color:var(--tp);cursor:pointer;font-size:13px}
+button:hover{opacity:0.85}
+.btn-primary{background:#98B8D8;color:#fff;border-color:#98B8D8}
+.btn-primary:hover{opacity:0.9}
+.hamburger-btn{background:none;border:none;padding:6px;cursor:pointer;color:var(--tp);display:flex;align-items:center;justify-content:center;border-radius:var(--rm);flex-shrink:0;margin-right:8px}
+.hamburger-btn:hover{background:var(--bs)}
+.drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.35);z-index:100}
+.drawer-overlay.open{display:block}
+.drawer-nav{position:fixed;top:0;left:0;bottom:0;width:240px;background:#FAFBFD;border-right:0.5px solid var(--bd);z-index:101;transform:translateX(-100%);transition:transform 0.25s ease;display:flex;flex-direction:column;overflow-y:auto;box-shadow:4px 0 20px rgba(0,0,0,0.15)}
+@media(prefers-color-scheme:dark){.drawer-nav{background:#1a1a18}}
+.drawer-nav.open{transform:translateX(0)}
+.dnav-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--rm);cursor:pointer;font-size:13px;color:var(--ts);margin-bottom:2px}
+.dnav-item:hover{background:var(--bs)}
+.dnav-item.on{background:var(--bs);color:var(--tp);font-weight:500}
+.dnav-section{font-size:10px;color:var(--tt);padding:8px 12px 4px;letter-spacing:0.05em}
+.pg-header{position:sticky;top:0;background:var(--bt);z-index:5;padding:14px 0 8px;margin-bottom:4px;border-bottom:0.5px solid var(--bd)}
+.pg-title{font-size:16px;font-weight:500;color:var(--tp)}
+.pg-sub{font-size:12px;color:var(--ts);margin-top:2px}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="topbar">
-    <div class="logo-block"><div class="logo-title">家庭帳本</div><div class="logo-sub">共同記帳平台</div></div>
-    <div class="sep"></div>
-    <button class="ntab on" onclick="showTab('dash')"><span>📊</span> 儀表板</button>
-    <button class="ntab" onclick="showTab('search')"><span>🔍</span> 搜尋</button>
-    <button class="ntab" onclick="showTab('record')"><span>➕</span> 記帳</button>
-    <button class="ntab" onclick="showTab('settings')"><span>⚙️</span> 設定</button>
-    <div class="users">
-      <div class="av av-a">S</div>
-      <div class="uname">Sherry</div>
-      <div class="av av-s">A</div>
-      <div class="uname">Allen</div>
+
+  <!-- 載入畫面 -->
+  <div id="loading-overlay" style="position:fixed;inset:0;background:var(--bt);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
+    <div style="font-size:18px;font-weight:500;color:var(--tp)">家庭帳本</div>
+    <div style="font-size:13px;color:var(--ts)" id="loading-msg">載入資料中...</div>
+    <div style="width:40px;height:4px;background:var(--bd);border-radius:2px;overflow:hidden;margin-top:4px">
+      <div style="height:100%;background:#98B8D8;border-radius:2px;animation:load 1.2s ease-in-out infinite alternate"></div>
     </div>
   </div>
-  
+  <style>@keyframes load{from{width:0%}to{width:100%}}</style>
+
+  <div class="topbar">
+    <button class="hamburger-btn" onclick="openDrawer()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div style="flex:1">
+      <div class="logo-title" id="topbar-title">手動記帳</div>
+    </div>
+    <div id="topbar-total" style="display:none;text-align:right;margin-right:8px">
+      <div style="background:#F0E0D0;border-radius:var(--rm);padding:4px 10px;text-align:center;border:0.5px solid #D8C0A8">
+        <div style="font-size:10px;color:#6A4030">資產總計</div>
+        <div style="font-size:14px;font-weight:500;color:#6A4030" id="topbar-total-val">—</div>
+      </div>
+    </div>
+    <!-- 電腦版頁籤 -->
+    <div class="sep desktop-only"></div>
+    <button class="ntab desktop-only" data-pg="asset"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" fill="currentColor" opacity="0.8"/><rect x="9" y="1" width="6" height="3" rx="1" fill="currentColor" opacity="0.5"/><rect x="1" y="9" width="6" height="6" rx="1" fill="currentColor" opacity="0.5"/><rect x="9" y="6" width="6" height="9" rx="1" fill="currentColor" opacity="0.5"/></svg>資產總覽</button>
+    <button class="ntab desktop-only" data-pg="expense"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>收支</button>
+    <div class="sep desktop-only"></div>
+    <button class="ntab desktop-only on" data-pg="record"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>手動記帳</button>
+    <button class="ntab desktop-only" data-pg="import"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M5 7l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>匯入帳單</button>
+    <div class="sep desktop-only"></div>
+    <button class="ntab desktop-only" data-pg="settings"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>設定</button>
+    <div class="users">
+      <button class="hamburger-btn" onclick="refreshData()" title="重新整理資料" style="margin-right:4px">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 9A9 9 0 0 1 19.7 15M4.3 9A9 9 0 0 0 20 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div style="display:flex;align-items:center;gap:5px"><div class="av av-a">A</div><span class="uname">Allen</span></div>
+      <div style="display:flex;align-items:center;gap:5px"><div class="av av-s">S</div><span class="uname">Sherry</span></div>
+    </div>
+  </div>
+
+  <!-- ── Pages ── -->
   <div class="main">
-    <!-- 儀表板 -->
-    <div class="pg on" id="dash">
-      <div style="padding:20px 0">
-        <div class="mc">
-          <div class="lbl">本月支出</div>
-          <div class="val r">NT$<span id="dash-exp">0</span></div>
-          <div class="hint" id="dash-hint"></div>
-        </div>
-      </div>
-      <div class="fc">
-        <div class="sec">每週趨勢</div>
-        <div id="weekly-chart" style="height:120px"></div>
-      </div>
-      <div class="fc">
-        <div class="sec">本月分類</div>
-        <div id="cat-summary"></div>
-      </div>
-      <div class="fc">
-        <div class="sec">固定/彈性</div>
-        <div class="sg2">
-          <div><div class="sgl">固定支出</div><div class="sgv gp">NT$<span id="fix-t">0</span></div><div class="hint" id="fix-p"></div></div>
-          <div><div class="sgl">彈性支出</div><div class="sgv rp">NT$<span id="flex-t">0</span></div><div class="hint" id="flex-p"></div></div>
-        </div>
-        <div id="fix-items" style="margin-top:8px"></div>
-      </div>
-    </div>
 
-    <!-- 搜尋 -->
-    <div class="pg" id="search">
-      <div style="padding:20px 0">
-        <!-- 搜尋類型選擇 -->
-        <div style="display:flex;gap:8px;margin-bottom:20px">
-          <button class="mtl-btn on" onclick="showSearchType('banks')">帳戶明細</button>
-          <button class="mtl-btn" onclick="showSearchType('transactions')">收支明細</button>
-        </div>
-
-        <!-- 帳戶明細頁面 -->
-        <div id="search-banks">
-          <!-- 月份切換 -->
-          <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px">
-            <button style="background:none;border:0.5px solid var(--bd);padding:8px 12px;cursor:pointer;border-radius:var(--rm)" onclick="prevMonth()">◄</button>
-            <span style="font-weight:500;min-width:140px;text-align:center;color:var(--tp)" id="current-month">2026年5月</span>
-            <button style="background:none;border:0.5px solid var(--bd);padding:8px 12px;cursor:pointer;border-radius:var(--rm)" onclick="nextMonth()">►</button>
+    <!-- 資產 -->
+    <div class="pg" id="pg-asset">
+      <div class="pg-header">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end">
+          <div>
+            <div class="pg-title">資產總覽</div>
+            <div class="pg-sub">各基金現值彙整</div>
           </div>
-
-          <!-- 帳戶標籤 -->
-          <div style="display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;padding-bottom:8px" id="bank-tabs"></div>
-
-          <!-- 帳戶詳細資訊 -->
-          <div class="fc">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
-              <div style="background:var(--bs);padding:12px;border-radius:var(--rm)">
-                <div style="font-size:11px;color:var(--ts);margin-bottom:4px">期初餘額</div>
-                <div style="font-size:16px;font-weight:500;color:var(--tp)" id="bank-initial">NT$0</div>
-              </div>
-              <div style="background:var(--bs);padding:12px;border-radius:var(--rm)">
-                <div style="font-size:11px;color:var(--ts);margin-bottom:4px">目前餘額</div>
-                <div style="font-size:16px;font-weight:500;color:var(--tp)" id="bank-current">NT$0</div>
-              </div>
-            </div>
-
-            <!-- 交易明細 -->
-            <div style="margin-bottom:16px">
-              <div style="font-size:12px;font-weight:500;color:var(--tp);margin-bottom:10px">交易明細</div>
-              <div id="bank-transactions" style="border-top:0.5px solid var(--bd);padding-top:8px"></div>
-            </div>
-
-            <!-- 月份統計 -->
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-              <div style="background:var(--bs);padding:10px;border-radius:var(--rm);text-align:center">
-                <div style="font-size:10px;color:var(--ts);margin-bottom:4px">本月收入</div>
-                <div style="font-size:13px;font-weight:500;color:var(--green)" id="month-income">+NT$0</div>
-              </div>
-              <div style="background:var(--bs);padding:10px;border-radius:var(--rm);text-align:center">
-                <div style="font-size:10px;color:var(--ts);margin-bottom:4px">本月支出</div>
-                <div style="font-size:13px;font-weight:500;color:var(--red)" id="month-expense">-NT$0</div>
-              </div>
-              <div style="background:var(--bs);padding:10px;border-radius:var(--rm);text-align:center">
-                <div style="font-size:10px;color:var(--ts);margin-bottom:4px">淨額變化</div>
-                <div style="font-size:13px;font-weight:500;color:var(--tp)" id="month-net">NT$0</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 收支明細頁面 -->
-        <div id="search-transactions" style="display:none">
-          <div class="fc">
-            <div class="sec">搜尋收支明細</div>
-            
-            <div class="fg">
-              <div class="fl">日期範圍</div>
-              <div class="g2">
-                <input type="date" id="search-date-from" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-                <input type="date" id="search-date-to" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-              </div>
-            </div>
-
-            <div class="g2">
-              <div class="fg">
-                <div class="fl">支付管道</div>
-                <select id="search-channel" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-                  <option value="">全部</option>
-                </select>
-              </div>
-              <div class="fg">
-                <div class="fl">費用類別</div>
-                <select id="search-category" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-                  <option value="">全部</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="g2">
-              <div class="fg">
-                <div class="fl">記帳人</div>
-                <select id="search-user" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-                  <option value="">全部</option>
-                  <option>Sherry</option>
-                  <option>Allen</option>
-                </select>
-              </div>
-              <div class="fg">
-                <div class="fl">交易類型</div>
-                <select id="search-type" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-                  <option value="">全部</option>
-                  <option>收入</option>
-                  <option>支出</option>
-                  <option>轉帳</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="g2">
-              <div class="fg">
-                <div class="fl">金額範圍</div>
-                <input type="number" id="search-amount-from" placeholder="從" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-              </div>
-              <div class="fg">
-                <div class="fl"></div>
-                <input type="number" id="search-amount-to" placeholder="到" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-              </div>
-            </div>
-
-            <div class="fg">
-              <div class="fl">關鍵字（備註）</div>
-              <input type="text" id="search-keyword" placeholder="搜尋備註欄位" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-            </div>
-
-            <div style="display:flex;gap:8px;margin-top:12px">
-              <button style="flex:1;padding:10px" onclick="performSearch()">搜尋</button>
-              <button style="flex:1;padding:10px;background:none;border:0.5px solid var(--bdm);color:var(--ts)" onclick="resetSearch()">重設</button>
-            </div>
-          </div>
-
-          <!-- 搜尋結果 -->
-          <div id="search-results" style="display:none;margin-top:20px">
-            <div class="fc">
-              <div class="sec" id="search-results-count"></div>
-              <div style="overflow-x:auto">
-                <table style="width:100%;border-collapse:collapse;font-size:12px">
-                  <thead>
-                    <tr style="border-bottom:0.5px solid var(--bd)">
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">日期</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">類型</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">記帳人</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">支付管道</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">類別</th>
-                      <th style="padding:8px;text-align:right;color:var(--ts);font-weight:500">金額</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">備註</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">固定</th>
-                      <th style="padding:8px;text-align:left;color:var(--ts);font-weight:500">轉帳</th>
-                      <th style="padding:8px;text-align:center;color:var(--ts);font-weight:500">操作</th>
-                    </tr>
-                  </thead>
-                  <tbody id="search-results-body"></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div id="search-no-results" style="display:none;text-align:center;padding:40px 16px">
-            <div style="font-size:14px;color:var(--ts);margin-bottom:8px">找不到符合條件的記帳紀錄</div>
+          <div style="font-size:10px;color:var(--ts);text-align:right;padding-bottom:2px">
+            更新日期<br>
+            <span id="asset-update-date" style="font-weight:500;color:var(--tp)">—</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 記帳頁面 -->
-    <div class="pg" id="record">
-      <div style="padding:20px 0">
+      <!-- 頂部摘要 -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px" class="asset-top-grid">
+        <div class="mc"><div class="lbl">房貸基金</div><div class="val" id="a-goal-val">讀取中...</div><div class="hint">凱基 + 新光</div></div>
+        <div class="mc"><div class="lbl">專款基金</div><div class="val" id="a-sub-val">讀取中...</div><div class="hint">國泰三個子基金</div></div>
+        <div class="mc"><div class="lbl">日常帳戶</div><div class="val" id="a-daily-val">讀取中...</div><div class="hint">郵局 + 台銀</div></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr;gap:11px">
+        <!-- 日常（第一） -->
         <div class="fc">
-          <div class="sec">新增記帳</div>
-          <div class="fg">
-            <div class="fl">日期</div>
-            <input type="date" id="rec-date" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+            <div><div class="sec" style="margin-bottom:2px">日常帳戶</div><div style="font-size:11px;color:var(--ts)">收入入帳 / 日常支出</div><span class="bdg bd3">流動帳戶</span></div>
+            <div style="font-size:15px;font-weight:500" id="daily-total-val">—</div>
           </div>
-          <div class="g2">
-            <div class="fg">
-              <div class="fl">類別</div>
-              <select id="rec-cat" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"></select>
+          <hr class="hr">
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#888780"></span>郵局</span><span class="rv" id="post-bank-val">—</span></div>
+          <div style="font-size:10px;color:var(--tt);padding:1px 0 4px 11px">扣：水電瓦斯保險</div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#888780"></span>台灣銀行</span><span class="rv" id="tw-bank-val">—</span></div>
+          <div style="font-size:10px;color:var(--tt);padding:1px 0 4px 11px">扣：信用卡款</div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#888780"></span>台銀日幣</span><span class="rv" id="jpy-bank-val">—</span></div>
+          <hr class="hr">
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#98B8D8"></span>Sherry 現金</span><span class="rv" id="sherry-cash-val">—</span></div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#1D9E75"></span>Allen 現金</span><span class="rv" id="allen-cash-val">—</span></div>
+        </div>
+        <!-- 凱基 -->
+        <div class="fc">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+            <div><div class="sec" style="margin-bottom:2px">凱基基金</div><div style="font-size:11px;color:var(--ts)">房貸頭期款</div><span class="bdg bd1">已達標，持續增值</span></div>
+            <div style="font-size:15px;font-weight:500" id="kai-total-val">—</div>
+          </div>
+          <hr class="hr">
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#1D9E75"></span>銀行存款</span><span class="rv" id="kai-bank-val">—</span></div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#534AB7"></span>股票現值</span><span class="rv" id="kai-stock-val">—</span></div>
+        </div>
+        <!-- 新光 -->
+        <div class="fc">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+            <div><div class="sec" style="margin-bottom:2px">新光基金</div><div style="font-size:11px;color:var(--ts)">模擬房貸，每月投入</div><span class="bdg bd2">累積中</span></div>
+            <div style="font-size:15px;font-weight:500" id="shin-total-val">—</div>
+          </div>
+          <hr class="hr">
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#1D9E75"></span>銀行存款</span><span class="rv" id="shin-bank-val">—</span></div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#534AB7"></span>股票現值</span><span class="rv" id="shin-stock-val">—</span></div>
+        </div>
+        <!-- 國泰 -->
+        <div class="fc">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+            <div><div class="sec" style="margin-bottom:2px">國泰基金</div><div style="font-size:11px;color:var(--ts)">三個子基金 + 存款</div><span class="bdg bd2">累積中</span></div>
+            <div style="font-size:15px;font-weight:500" id="ctbc-total-val">—</div>
+          </div>
+          <hr class="hr">
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#1D9E75"></span>銀行存款</span><span class="rv" id="ctbc-bank-val">—</span></div>
+          <div class="rrow"><span class="rl"><span class="dot" style="background:#534AB7"></span>股票現值</span><span class="rv" id="ctbc-stock-val">—</span></div>
+          <hr class="hr">
+          <!-- 汽機車 -->
+          <div class="sb">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px">
+              <div style="font-size:12px;font-weight:500;display:flex;align-items:center;gap:5px"><span class="dot" style="background:#EF9F27"></span>汽機車基金</div>
+              <div style="font-size:12px;font-weight:500" id="car-cur">—</div>
             </div>
-            <div class="fg">
-              <div class="fl">支付管道</div>
-              <select id="rec-chan" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"></select>
+            <div class="sg2">
+              <div><div class="sgl">今年目標</div><div class="sgv" id="car-ti-show">—</div></div>
+              <div><div class="sgl">累計投入</div><div class="sgv" id="car-invested">—</div></div>
             </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span class="sgl">距目標差額</span><span class="sgv rp" id="car-gap">—</span></div>
+            <div class="pb"><div class="pf" id="car-pf" style="background:#EF9F27;width:0%"></div></div>
           </div>
-          <div class="fg">
-            <div class="fl">記帳人</div>
-            <select id="rec-user" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"><option>Sherry</option><option>Allen</option></select>
+          <!-- 教育 -->
+          <div class="sb" style="margin-top:6px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px">
+              <div style="font-size:12px;font-weight:500;display:flex;align-items:center;gap:5px"><span class="dot" style="background:#378ADD"></span>教育基金</div>
+              <div style="font-size:12px;font-weight:500" id="edu-cur">—</div>
+            </div>
+            <div class="sg2">
+              <div><div class="sgl">今年目標</div><div class="sgv" id="edu-ti-show">—</div></div>
+              <div><div class="sgl">累計投入</div><div class="sgv" id="edu-invested">—</div></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span class="sgl">距目標差額</span><span class="sgv rp" id="edu-gap">—</span></div>
+            <div class="pb"><div class="pf" id="edu-pf" style="background:#378ADD;width:0%"></div></div>
           </div>
-          <div class="fg">
-            <div class="fl">金額</div>
-            <input type="number" id="rec-amt" placeholder="0" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
+          <!-- 旅遊 -->
+          <div class="sb" style="margin-top:6px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px">
+              <div style="font-size:12px;font-weight:500;display:flex;align-items:center;gap:5px"><span class="dot" style="background:#D4537E"></span>國外旅遊基金</div>
+              <div style="font-size:12px;font-weight:500" id="travel-cur">—</div>
+            </div>
+            <div class="sg2">
+              <div><div class="sgl">今年目標</div><div class="sgv" id="travel-ti-show">—</div></div>
+              <div><div class="sgl">累計投入</div><div class="sgv" id="travel-invested">—</div></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span class="sgl">距目標差額</span><span class="sgv rp" id="travel-gap">—</span></div>
+            <div class="pb"><div class="pf" id="travel-pf" style="background:#D4537E;width:0%"></div></div>
           </div>
-          <div class="fg">
-            <div class="fl">說明</div>
-            <input type="text" id="rec-desc" placeholder="(可選)" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">
-          </div>
-          <div class="g2" style="margin-top:12px">
-            <label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="rec-fixed" style="cursor:pointer"> 固定支出</label>
-            <label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="rec-transfer" style="cursor:pointer"> 轉帳<input type="text" id="rec-tgt" placeholder="轉帳對象" style="flex:1;padding:4px;border:0.5px solid var(--bdm);border-radius:4px;display:none;margin-left:4px"></label>
-          </div>
-          <button style="width:100%;margin-top:16px;padding:10px" onclick="submitRecord()">記帳</button>
         </div>
       </div>
+      <div style="height:70px"></div>
     </div>
 
-    <!-- 設定頁面 -->
-    <div class="pg" id="settings">
-      <div style="padding:20px 0">
+    <!-- 收支 -->
+    <div class="pg" id="pg-expense">
+      <div class="pg-header">
+        <div class="pg-title">收支</div>
+        <div class="pg-sub">年度總計與月份明細</div>
+      </div>
+      <div class="exl">
+        <div>
+          <div style="font-size:11px;font-weight:500;color:var(--ts);margin-bottom:8px">2026 年度</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px">
+            <div class="mc"><div class="lbl">年度收入</div><div class="val g" style="font-size:14px" id="yr-inc">—</div></div>
+            <div class="mc"><div class="lbl">年度支出</div><div class="val r" style="font-size:14px" id="yr-exp">—</div></div>
+            <div class="mc"><div class="lbl">年度結餘</div><div class="val g" style="font-size:14px" id="yr-bal">—</div><div class="hint" id="yr-pct"></div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+            <div class="mc"><div class="lbl">月平均支出</div><div class="val r" style="font-size:14px" id="yr-avg-exp">—</div><div class="hint" id="yr-avg-hint">已過月份平均</div></div>
+            <div class="mc"><div class="lbl">月平均結餘</div><div class="val g" style="font-size:14px" id="yr-avg-bal">—</div></div>
+          </div>
+          <div class="fc" style="padding:12px"><div class="lbl" style="margin-bottom:7px">各月支出趨勢</div><div class="tbs" id="tbs"></div></div>
+        </div>
+        <div>
+          <div class="mtabs" id="mtabs"></div>
+          <div class="tc3">
+            <div class="mc"><div class="lbl" id="lbl-inc">當月收入</div><div class="val g" id="m-inc">—</div></div>
+            <div class="mc"><div class="lbl" id="lbl-exp">當月支出</div><div class="val r" id="m-exp">—</div></div>
+            <div class="mc"><div class="lbl" id="lbl-bal">當月結餘</div><div class="val g" id="m-bal">—</div></div>
+          </div>
+          <div class="tc2">
+            <div class="fc"><div class="sec" id="cat-title">支出分類 <span style="font-size:10px;color:var(--tt);font-weight:400">點選看明細</span></div><div id="cat-bars"></div></div>
+            <div class="fc"><div class="sec" id="ch-title">支付管道</div><div id="ch-rows"></div></div>
+          </div>
+          <div class="fc">
+            <div class="sec" id="fix-title">固定 vs 彈性支出</div>
+            <div class="ffs">
+              <div class="ffc"><div class="lbl">固定開銷</div><div style="font-size:13px;font-weight:500" id="fix-t">—</div><div style="font-size:10px;color:var(--ts)" id="fix-p">—</div></div>
+              <div class="ffc"><div class="lbl">彈性支出</div><div style="font-size:13px;font-weight:500" id="flex-t">—</div><div style="font-size:10px;color:var(--ts)" id="flex-p">—</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height:70px"></div>
+    </div>
+
+    <!-- 手動記帳（預設開啟） -->
+    <div class="pg on" id="pg-record">
+      <div class="pg-header">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end">
+          <div>
+            <div class="pg-title">手動記帳</div>
+            <div class="pg-sub">新增一筆收支</div>
+          </div>
+          <div style="display:flex;gap:10px;padding-bottom:2px">
+            <div style="text-align:center;background:#EAF0F8;border-radius:var(--rm);padding:4px 10px">
+              <div style="font-size:10px;color:#607090">Allen 現金</div>
+              <div style="font-size:13px;font-weight:500;color:#304060" id="allen-cash-val">—</div>
+            </div>
+            <div style="text-align:center;background:#F8EEE8;border-radius:var(--rm);padding:4px 10px">
+              <div style="font-size:10px;color:#806050">Sherry 現金</div>
+              <div style="font-size:13px;font-weight:500;color:#6A4030" id="sherry-cash-val">—</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width:100%">
         <div class="fc">
-          <div class="sec">支付管道 (<span id="ch-count">0</span>)</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+            <div class="fg"><div class="fl">類型</div><select id="rec-type" onchange="toggleTransfer()"><option>支出</option><option>收入</option><option>轉帳</option></select></div>
+            <div class="fg"><div class="fl">記帳人</div><select id="rec-person"><option>Allen（現金）</option><option>Sherry</option></select></div>
+          </div>
+          <div class="fg" id="transfer-row" style="display:none"><div class="fl">轉入帳戶</div><select id="rec-transfer-to"></select></div>
+          <div class="fg" id="subfund-row" style="display:none">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;color:var(--ts)">
+              <input type="checkbox" id="rec-subfund" style="width:18px;height:18px;cursor:pointer;accent-color:#98B8D8">
+              按比例分配到子基金
+            </label>
+          </div>
+          <div class="fg"><div class="fl">金額（TWD）</div><input id="rec-amount" type="number" placeholder="0" style="font-size:20px;padding:10px 12px"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+            <div class="fg"><div class="fl">支付管道</div>
+              <select id="rec-channel">
+                <option>Allen 現金</option><option>Allen 玉山卡</option><option>Sherry 國泰 Cube</option><option>銀行扣款</option>
+              </select>
+            </div>
+            <div class="fg"><div class="fl">費用類別</div>
+              <select id="rec-cat">
+                <option>食</option><option>育</option><option>住</option><option>行</option><option>衣</option><option>樂</option><option>醫療</option><option>保費</option><option>其他</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg"><div class="fl">日期</div><input id="rec-date" type="date"></div>
+          <div class="fg"><div class="fl">備註（選填）</div><input id="rec-note" type="text" placeholder="例：全聯採買、加油"></div>
+          <div style="display:flex;align-items:center;gap:10px;padding:8px 0;margin-bottom:4px">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;color:var(--ts)">
+              <input type="checkbox" id="rec-fixed" style="width:18px;height:18px;cursor:pointer;accent-color:#98B8D8">
+              固定開銷（定期發生的支出）
+            </label>
+          </div>
+          <div id="record-msg" style="font-size:13px;margin-bottom:8px;min-height:18px;text-align:center"></div>
+          <button id="record-btn" class="btn-primary" style="width:100%;padding:11px;font-size:14px;border:none" onclick="submitRecord()">新增記帳</button>
+        </div>
+      </div>
+      <div style="height:70px"></div>
+    </div>
+
+    <!-- 匯入帳單 -->
+    <div class="pg" id="pg-import">
+      <div class="pg-header">
+        <div class="pg-title">匯入帳單</div>
+        <div class="pg-sub">上傳帳單，AI 自動辨識分類</div>
+      </div>
+      <div class="uz">
+        <div style="font-size:24px;color:var(--ts);margin-bottom:8px">⬆</div>
+        <div style="font-size:13px;font-weight:500;margin-bottom:5px">拖放檔案或點擊上傳</div>
+        <div style="font-size:11px;color:var(--ts)">支援 PDF、Excel、CSV、圖片（收據 / 截圖）</div>
+        <div class="ftg"><span class="ft">信用卡帳單 PDF</span><span class="ft">銀行對帳單</span><span class="ft">收據照片</span><span class="ft">網銀截圖</span><span class="ft">Excel / CSV</span></div>
+      </div>
+      <div class="fc">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:11px">
+          <div class="sec" style="margin-bottom:0">辨識結果（待確認）</div>
+          <span style="font-size:10px;padding:2px 8px;border-radius:20px;background:#EEEDFE;color:#3C3489">3 筆</span>
+        </div>
+        <div class="air"><div style="width:7px;height:7px;border-radius:50%;background:#EF9F27;flex-shrink:0"></div><div class="ain"><div class="n">中油加油站</div><div class="d">Allen 玉山卡 4/12 · 行 ★ 每月固定</div></div><div style="display:flex;align-items:center;gap:6px"><select style="width:auto;font-size:11px;padding:2px 5px"><option>行</option><option>食</option><option>住</option></select><div style="font-size:12px;font-weight:500;color:var(--red);width:56px;text-align:right">-$1,200</div></div></div>
+        <div class="air"><div style="width:7px;height:7px;border-radius:50%;background:#1D9E75;flex-shrink:0"></div><div class="ain"><div class="n">全聯福利中心</div><div class="d">Sherry 國泰 Cube 4/13 · 食</div></div><div style="display:flex;align-items:center;gap:6px"><select style="width:auto;font-size:11px;padding:2px 5px"><option>食</option><option>行</option><option>住</option></select><div style="font-size:12px;font-weight:500;color:var(--red);width:56px;text-align:right">-$3,540</div></div></div>
+        <div class="air"><div style="width:7px;height:7px;border-radius:50%;background:#534AB7;flex-shrink:0"></div><div class="ain"><div class="n">○○補習班</div><div class="d">銀行扣款 4/10 · 育 ★ 每月固定</div></div><div style="display:flex;align-items:center;gap:6px"><select style="width:auto;font-size:11px;padding:2px 5px"><option>育</option><option>食</option><option>住</option></select><div style="font-size:12px;font-weight:500;color:var(--red);width:56px;text-align:right">-$8,000</div></div></div>
+        <div style="margin-top:12px"><button class="btn-primary" style="width:100%;padding:10px;font-size:13px;border:none">全部確認入帳</button></div>
+      </div>
+      <div style="height:70px"></div>
+    </div>
+
+    <!-- 設定 -->
+    <div class="pg" id="pg-settings">
+      <div class="pg-header">
+        <div class="pg-title">設定</div>
+        <div class="pg-sub">管理支付管道與費用類別</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr;gap:14px">
+        <!-- 支付管道 -->
+        <div class="fc">
+          <div class="sec" style="display:flex;justify-content:space-between"><span>支付管道</span><span style="font-size:11px;color:var(--ts)" id="ch-count"></span></div>
           <div id="ch-list"></div>
           <div class="add-row">
-            <input type="text" id="ch-input" placeholder="新支付管道名稱">
-            <select id="ch-owner"><option>Sherry</option><option>Allen</option><option>共同</option></select>
-            <button id="ch-add-btn">新增</button>
+            <input id="ch-input" type="text" placeholder="新增管道名稱" style="flex:1">
+            <select id="ch-owner" style="width:100px"><option>Sherry</option><option>Allen</option><option>共同</option></select>
+            <button id="ch-add-btn" class="btn-primary">新增</button>
           </div>
         </div>
+        <!-- 費用類別 -->
         <div class="fc">
-          <div class="sec">費用類別 (<span id="cat-count">0</span>)</div>
-          <div id="cat-tags"></div>
+          <div class="sec" style="display:flex;justify-content:space-between"><span>費用類別</span><span style="font-size:11px;color:var(--ts)" id="cat-count"></span></div>
+          <div class="tags-wrap" id="cat-tags"></div>
           <div class="add-row">
-            <input type="text" id="cat-input" placeholder="新類別名稱">
-            <div id="color-pick"></div>
-            <button id="cat-add-btn">新增</button>
+            <input id="cat-input" type="text" placeholder="新增類別" style="flex:1">
+            <div class="color-pick" id="color-pick"></div>
+            <button id="cat-add-btn" class="btn-primary">新增</button>
           </div>
+          <div style="font-size:11px;color:var(--ts);margin-top:8px;padding:7px 9px;background:var(--bs);border-radius:var(--rm)">點類別名稱可修改，顏色用於圖表顯示</div>
         </div>
       </div>
+      <div style="height:70px"></div>
     </div>
+
+    <!-- 浮層明細 -->
+    <div class="mbg" id="mbg">
+      <div class="mbox">
+        <div class="mh"><div><div class="mt2" id="m-ttl">明細</div><div class="mm" id="m-meta"></div></div><button class="mcl" id="m-cls">×</button></div>
+        <div class="mb" id="m-body"></div>
+        <div class="mf"><div style="font-size:12px;color:var(--ts)">小計</div><div style="font-size:13px;font-weight:500;color:var(--red)" id="m-tot">—</div></div>
+      </div>
+    </div>
+
+    <!-- 左側抽屜 -->
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer-nav" id="drawer-nav">
+      <div style="padding:20px 16px 16px;border-bottom:0.5px solid var(--bd)">
+        <div style="font-size:15px;font-weight:500;color:var(--tp)">家庭帳本</div>
+        <div style="font-size:11px;color:var(--ts);margin-top:2px">Allen & Sherry</div>
+      </div>
+      <div style="padding:10px 8px">
+        <div class="dnav-item on" data-pg="asset" onclick="showPage('asset');closeDrawer()">
+          <span style="font-size:22px">📊</span>
+          資產總覽
+        </div>
+        <div class="dnav-item" data-pg="expense" onclick="showPage('expense');closeDrawer()">
+          <span style="font-size:22px">💸</span>
+          收支
+        </div>
+        <div class="dnav-section">記帳</div>
+        <div class="dnav-item" data-pg="record" onclick="showPage('record');closeDrawer()">
+          <span style="font-size:22px">✏️</span>
+          手動記帳
+        </div>
+        <div class="dnav-item" data-pg="import" onclick="showPage('import');closeDrawer()">
+          <span style="font-size:22px">📥</span>
+          匯入帳單
+        </div>
+        <div class="dnav-section">其他</div>
+        <div class="dnav-item" data-pg="settings" onclick="showPage('settings');closeDrawer()">
+          <span style="font-size:22px">⚙️</span>
+          設定
+        </div>
+      </div>
+      <div style="margin-top:auto;padding:16px;border-top:0.5px solid var(--bd);display:flex;gap:10px">
+        <div style="display:flex;align-items:center;gap:6px"><div class="av av-a">A</div><span style="font-size:12px;color:var(--ts)">Allen</span></div>
+        <div style="display:flex;align-items:center;gap:6px"><div class="av av-s">S</div><span style="font-size:12px;color:var(--ts)">Sherry</span></div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="botbar">
-    <button class="btab on" onclick="showTab('dash')"><span>📊</span> <div class="btab-lbl">儀表板</div></button>
-    <button class="btab" onclick="showTab('search')"><span>🔍</span> <div class="btab-lbl">搜尋</div></button>
-    <button class="btab" onclick="showTab('record')"><span>➕</span> <div class="btab-lbl">記帳</div></button>
-    <button class="btab" onclick="showTab('settings')"><span>⚙️</span> <div class="btab-lbl">設定</div></button>
-  </div>
-</div>
-
-<!-- 編輯交易浮層 -->
-<div class="modal" id="edit-transaction-modal">
-  <div class="modal-box">
-    <div class="modal-ttl">編輯交易記錄</div>
-    <div id="edit-form" style="margin-top:12px"></div>
-    <div style="display:flex;gap:8px;margin-top:16px">
-      <button style="flex:1;padding:10px" id="save-edit-btn">儲存</button>
-      <button style="flex:1;padding:10px;background:none;border:0.5px solid #F09595;color:var(--red)" id="delete-edit-btn">刪除</button>
-      <button style="flex:1;padding:10px;background:none;border:0.5px solid var(--bdm);color:var(--ts)" onclick="$('edit-transaction-modal').classList.remove('on')">取消</button>
-    </div>
-  </div>
-</div>
-
-<!-- 國泰銀行自動分配浮層 -->
-<div class="modal" id="guotai-dist-modal">
-  <div class="modal-box" style="max-width:500px">
-    <div class="modal-ttl" id="guotai-dist-title">國泰銀行自動分配</div>
-    <div id="guotai-dist-body" style="margin-top:12px"></div>
-    <div style="display:flex;gap:8px;margin-top:16px">
-      <button id="guotai-dist-confirm" style="flex:1;padding:10px">確認分配</button>
-      <button style="flex:1;padding:10px;background:none;border:0.5px solid var(--bdm);color:var(--ts)" onclick="$('guotai-dist-modal').classList.remove('on')">取消</button>
-    </div>
-  </div>
 </div>
 
 <script>
-const APPS_SCRIPT_URL='https://script.google.com/macros/d/AKfycbxE8NJxFl-CI95FnXH1diGt4iuEVuH08CQ67thiWTlFXggmriows5J7iKl8XRHXL1sn/usercodeapp';
-function $(id){return document.getElementById(id);}
-function fmt(n){return (Math.round(n*100)/100).toLocaleString('zh-TW',{minimumFractionDigits:0,maximumFractionDigits:0})}
-function pct(a,b){return b?(Math.round(a/b*100))+'%':'0%'}
+const $=id=>document.getElementById(id);
+const fmt=n=>'$'+Math.round(n).toLocaleString('zh-TW');
+const pct=(a,b)=>b?Math.round(a/b*100)+'%':'—';
+const MONTHS=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+const CC={'食':'#1D9E75','育':'#534AB7','住':'#378ADD','行':'#EF9F27','衣':'#D4537E','醫療':'#E24B4A','樂':'#888780','保費':'#639922','其他':'#D85A30'};
 
-let TX={},CC={},FIXED_ITEMS=[],USERS=['Sherry','Allen'];
-let BANKS=[],TRANSACTIONS=[],STOCKS=[],SUBFUNDS=[],SETTINGS=[];
-let GUOTAI_TOTAL=0;
-let SEARCH_RESULTS=[];
-let EDITING_TRANSACTION=null;
-let CURRENT_BANK=null;
-let CURRENT_MONTH=null;
-let SEARCH_MONTH=null;
+// ── Google Sheets 設定 ──
+const SHEET_ID='1-nnAShqLPr-PkprPcxd3SXNEv9DQJv1xqZQVehxKWl0';
+const SHEET_BASE=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=`;
 
-function showTab(tab){
-  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
-  document.querySelectorAll('.ntab,.btab').forEach(t=>t.classList.remove('on'));
-  $(tab)&&$(tab).classList.add('on');
-  event?.target?.classList.add('on');
+// 全域資料
+let TX={};
+let MD={};
+let BANKS=[];
+let SUBFUNDS=[];
+let FIXED_ITEMS=[];
+for(let i=1;i<=12;i++){const m=MONTHS[i-1];MD[m]={income:0,expense:0,cats:[],channels:[],fixed:0,flex:0};}
+
+// 解析 Google Sheets JSON 回傳
+function parseGviz(text){
+  const json=JSON.parse(text.replace(/.*?(\{.*\}).*/s,'$1'));
+  const cols=json.table.cols.map(c=>c.label);
+  return (json.table.rows||[]).map(r=>{
+    const obj={};
+    r.c.forEach((cell,i)=>{obj[cols[i]]=cell?cell.v:null;});
+    return obj;
+  });
 }
 
-function showSearchType(type){
-  const banks=$('search-banks');
-  const trans=$('search-transactions');
-  const btns=document.querySelectorAll('#search .mtl-btn');
-  
-  if(type==='banks'){
-    banks.style.display='block';
-    trans.style.display='none';
-    btns[0].classList.add('on');
-    btns[1].classList.remove('on');
-    renderBankTabs();
-  }else{
-    banks.style.display='none';
-    trans.style.display='block';
-    btns[0].classList.remove('on');
-    btns[1].classList.add('on');
-    initSearchTransactions();
+async function fetchSheet(name){
+  try{
+    const res=await fetch(SHEET_BASE+encodeURIComponent(name));
+    const text=await res.text();
+    // 除錯：顯示原始回傳
+    console.log('fetchSheet', name, text.substring(0,200));
+    try{
+      return parseGviz(text);
+    }catch(pe){
+      console.warn('parseGviz失敗:',name,pe,text.substring(0,300));
+      return [];
+    }
+  }catch(e){
+    console.warn('讀取分頁失敗:',name,e);
+    return [];
   }
 }
 
-function renderTabs(){
-  const cats=Object.keys(TX).sort();
-  $('rec-cat').innerHTML='<option></option>'+cats.map(c=>`<option>${c}</option>`).join('');
-  const chans=[...new Set(BANKS.map(b=>b.名稱))];
-  $('rec-chan').innerHTML='<option></option>'+chans.map(c=>`<option>${c}</option>`).join('');
+// 顯示載入狀態
+function setLoading(msg){
+  const el=$('loading-msg');
+  if(el)el.textContent=msg;
 }
 
-function renderExpense(){
-  const cats=Object.keys(TX).sort();
-  $('cat-summary').innerHTML=cats.length?cats.map(c=>{
-    const items=TX[c]||[],total=items.reduce((s,t)=>s+t.v,0),color=CC[c]||'#888';
-    return `<div class="br" onclick="openModal('${c}')"><div class="brl">${c}</div><div class="brw"><div class="brf" style="background:${color};width:${Math.min(total/50,100)}%"></div></div><div class="bra">NT$${fmt(total)}</div></div>`;
-  }).join(''):'<div style="text-align:center;padding:20px;color:var(--tt)">暫無記帳</div>';
-  const total=cats.reduce((s,c)=>(TX[c]||[]).reduce((ss,t)=>ss+t.v,0)+s,0);
-  $('dash-exp').textContent=fmt(total);
+async function loadAllData(){
+  setLoading('讀取銀行存款...');
+  const banks=await fetchSheet('銀行存款');
+  BANKS=banks.filter(r=>r['帳戶名稱']);
+
+  setLoading('讀取股票明細...');
+  const stocks=await fetchSheet('股票明細');
+
+  setLoading('讀取子基金...');
+  const subfunds=await fetchSheet('子基金');
+  SUBFUNDS=subfunds.filter(r=>r['子基金名稱']);
+
+  setLoading('讀取收支記帳...');
+  const txRows=await fetchSheet('收支記帳');
+
+  setLoading('讀取固定開銷...');
+  const fixedRows=await fetchSheet('固定開銷');
+  FIXED_ITEMS=fixedRows.filter(r=>r['項目名稱']||r['備註']);
+
+  setLoading('讀取設定...');
+  const settingsRows=await fetchSheet('設定');
+  console.log('設定筆數:', settingsRows.length);
+  if(settingsRows.length>0)console.log('設定第一筆:', JSON.stringify(settingsRows[0]));
+  // 解析支付管道（A-C欄）- 支援兩種欄位名稱
+  const chRows=settingsRows.filter(r=>(r['支付管道名稱']||r['名稱'])&&(r['支付管道名稱']||r['名稱'])!=='支付管道名稱'&&(r['支付管道名稱']||r['名稱'])!=='名稱');
+  if(chRows.length>0){
+    channels=chRows.map((r,i)=>({id:i+1,name:r['支付管道名稱']||r['名稱'],owner:r['負責人']||'共同',color:r['顏色']||'#888780'}));
+    renderChannels();
+  }
+  // 解析費用類別（E-F欄）- 支援兩種欄位名稱
+  const catRows=settingsRows.filter(r=>(r['類別名稱']||r['費用類別名稱'])&&(r['類別名稱']||r['費用類別名稱'])!=='類別名稱');
+  if(catRows.length>0){
+    cats=catRows.map((r,i)=>({id:i+1,name:r['類別名稱']||r['費用類別名稱'],color:r['顏色']||'#888780'}));
+    cats.forEach(c=>{CC[c.name]=c.color;});
+    renderCats();
+  }
+
+  // 讀取子基金比例（設定分頁 H-I欄）
+  window._subfundRatios=[];
+  settingsRows.forEach(r=>{
+    const name=r['子基金名稱']||r['H'];
+    const ratio=r['分配比例']||r['I'];
+    if(name&&ratio){
+      window._subfundRatios.push({name:String(name).trim(),ratio:parseFloat(String(ratio).replace('%',''))/100||parseFloat(ratio)||0});
+    }
+  });
+  console.log('子基金比例:', window._subfundRatios);
+  for(let i=1;i<=12;i++){
+    const m=MONTHS[i-1];
+    MD[m]={income:0,expense:0,cats:[],channels:[],fixed:0,flex:0};
+  }
+
+  const catMap={};const chMap={};
+  txRows.filter(r=>(r['日期']||r['A'])&&(r['金額']||r['F'])).forEach(r=>{
+    const rawDate=String(r['日期']||r['A']||'').trim();
+    const amt=Math.abs(parseFloat(r['金額']||r['F'])||0);
+    const type=String(r['類型']||r['B']||'支出').trim();
+    const cat=String(r['費用類別']||r['E']||'其他').trim();
+    const ch=String(r['支付管道']||r['D']||'其他').trim();
+    const isFixed=String(r['是否固定']||r['H']||'').includes('是');
+    const note=String(r['備註']||r['G']||'').trim();
+    // 支援 Google Sheets gviz 日期格式 Date(2026,0,1) 及其他格式
+    let date;
+    const rawDateVal=r['日期']||r['A'];
+    if(rawDateVal instanceof Date){
+      date=rawDateVal;
+    } else {
+      const rawDate=String(rawDateVal||'').trim();
+      // gviz 格式：Date(2026,0,1) 月份從0開始
+      const gvizMatch=rawDate.match(/Date\((\d+),(\d+),(\d+)\)/);
+      if(gvizMatch){
+        date=new Date(parseInt(gvizMatch[1]),parseInt(gvizMatch[2]),parseInt(gvizMatch[3]));
+      } else {
+        const parts=rawDate.split(/[\/\-]/);
+        if(parts.length===3){
+          date=new Date(parseInt(parts[0]),parseInt(parts[1])-1,parseInt(parts[2]));
+        } else {
+          date=new Date(rawDate);
+        }
+      }
+    }
+    if(isNaN(date.getTime()))return;
+    const mIdx=date.getMonth();
+    const m=MONTHS[mIdx];
+    const dt=`${date.getMonth()+1}/${date.getDate()}`;
+
+    if(type==='收入'){MD[m].income+=amt;}
+    else if(type==='支出'){
+      MD[m].expense+=amt;
+      if(isFixed)MD[m].fixed+=amt;else MD[m].flex+=amt;
+      // 分類
+      if(!catMap[m])catMap[m]={};
+      catMap[m][cat]=(catMap[m][cat]||0)+amt;
+      // 管道
+      if(!chMap[m])chMap[m]={};
+      if(!chMap[m][ch])chMap[m][ch]={v:0,c:CC[cat]||'#888'};
+      chMap[m][ch].v+=amt;
+      // 明細
+      if(!TX[cat])TX[cat]=[];
+      TX[cat].push({n:note||cat,d:ch,dt,v:amt});
+    }
+  });
+
+  // 整理分類和管道
+  MONTHS.forEach(m=>{
+    if(catMap[m]){
+      MD[m].cats=Object.entries(catMap[m]).map(([n,v])=>({n,v})).sort((a,b)=>b.v-a.v);
+    }
+    if(chMap[m]){
+      MD[m].channels=Object.entries(chMap[m]).map(([n,d])=>({n,v:d.v,c:d.c})).sort((a,b)=>b.v-a.v);
+    }
+  });
+
+  // 更新資產頁面
+  // 更新資產日期
+  const dateEl=$('asset-update-date');
+  if(dateEl){
+    const now=new Date();
+    dateEl.textContent=`${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}/${String(now.getDate()).padStart(2,'0')}`;
+  }
+
+  renderAssetFromSheets(banks,stocks,subfunds,txRows);
+  renderFixed();
+
+  setLoading('');
+  $('loading-overlay').style.display='none';
+
+  renderTabs();
+  renderTrend();
+  renderExpense();
+}
+
+function calcLiveBalance(bankName, initBalance, txRows){
+  // 期初餘額 + 收入 - 支出 = 即時餘額
+  let balance = initBalance;
+  txRows.forEach(r=>{
+    if(!r['支付管道']&&!r['D'])return;
+    const ch=(r['支付管道']||r['D']||'').trim();
+    const amt=parseFloat(r['金額']||r['F'])||0;
+    const type=(r['類型']||r['B']||'').trim();
+    if(ch===bankName){
+      if(type==='收入')balance+=amt;
+      else if(type==='支出')balance-=amt;
+    }
+    // 轉帳
+    if(type==='轉帳'){
+      if(ch===bankName)balance-=amt;
+      if((r['轉帳對象']||r['I']||'').trim()===bankName)balance+=amt;
+    }
+  });
+  return balance;
+}
+
+function renderAssetFromSheets(banks, stocks, subfunds, txRows){
+  // 股票總覽（各基金）— 改用股數，美股直接用市值
+  const stockByFund={};
+  stocks.forEach(s=>{
+    const fund=s['所屬基金']||'其他';
+    const shares=parseFloat(s['股數'])||0;
+    const price=parseFloat(s['現價'])||0;
+    const directVal=parseFloat(s['市值'])||0;
+    // 美股或代號為「美股」直接用市值欄位
+    const isForeign=(s['代號']||'').includes('美股')||(s['代號']||'')==='';
+    const val=isForeign&&directVal?directVal:(directVal||shares*price);
+    stockByFund[fund]=(stockByFund[fund]||0)+val;
+  });
+
+  // 子基金
+  SUBFUNDS=subfunds.filter(r=>r['子基金名稱']);
+
+  // 各帳戶期初餘額
+  const getInit=(name)=>{
+    const b=banks.find(b=>(b['帳戶名稱']||'').trim()===name);
+    return parseFloat(b?.['期初餘額'])||0;
+  };
+
+  // 即時餘額
+  const rows=txRows||[];
+  const postB=calcLiveBalance('郵局',getInit('郵局'),rows);
+  const twB=calcLiveBalance('台灣銀行',getInit('台灣銀行'),rows);
+  const ctbcB=calcLiveBalance('國泰銀行',getInit('國泰銀行'),rows);
+  const kaiB=calcLiveBalance('凱基銀行',getInit('凱基銀行'),rows);
+  const shinB=calcLiveBalance('新光銀行',getInit('新光銀行'),rows);
+  const jpyB=calcLiveBalance('台銀日幣',getInit('台銀日幣'),rows);
+  const sherryCash=calcLiveBalance('Sherry現金',getInit('Sherry現金'),rows);
+  const allenCash=calcLiveBalance('Allen現金',getInit('Allen現金'),rows);
+
+  const kaiS=stockByFund['凱基基金']||0;
+  const shinS=stockByFund['新光基金']||0;
+  const ctbcS=stockByFund['國泰基金']||0;
+
+  const kaiTotal=kaiB+kaiS;
+  const shinTotal=shinB+shinS;
+  const ctbcTotal=ctbcB+ctbcS;
+  const dailyTotal=postB+twB+jpyB+sherryCash+allenCash; // 含現金
+  const grandTotal=kaiTotal+shinTotal+ctbcTotal+dailyTotal;
+
+  // 更新畫面
+  const setTxt=(id,v)=>{const el=$(id);if(el)el.textContent=typeof v==='number'?fmt(v):v;};
+  setTxt('topbar-total-val',grandTotal);
+  setTxt('a-goal-val',kaiTotal+shinTotal);
+  setTxt('a-sub-val',SUBFUNDS.reduce((s,f)=>s+(parseFloat(f['今年累計']||f['累計投入'])||0),0));
+  setTxt('a-daily-val',dailyTotal);
+  setTxt('kai-total-val',kaiTotal);
+  setTxt('kai-bank-val',kaiB);
+  setTxt('kai-stock-val',kaiS);
+  setTxt('shin-total-val',shinTotal);
+  setTxt('shin-bank-val',shinB);
+  setTxt('shin-stock-val',shinS);
+  setTxt('ctbc-total-val',ctbcTotal);
+  setTxt('ctbc-bank-val',ctbcB);
+  setTxt('ctbc-stock-val',ctbcS);
+  setTxt('daily-total-val',dailyTotal);
+  setTxt('post-bank-val',postB);
+  setTxt('tw-bank-val',twB);
+  setTxt('jpy-bank-val',jpyB);
+  setTxt('sherry-cash-val',sherryCash);
+  setTxt('allen-cash-val',allenCash);
+
+  // 支付管道下拉選單從銀行存款讀取
+  const chSel=$('rec-channel');
+  const transferSel=$('rec-transfer-to');
+  if(chSel&&banks.length){
+    const names=banks.map(b=>(b['帳戶名稱']||'').trim()).filter(Boolean);
+    chSel.innerHTML=names.map(n=>`<option>${n}</option>`).join('');
+    if(transferSel)transferSel.innerHTML=names.map(n=>`<option>${n}</option>`).join('');
+  }
+
+  // 子基金
+  SUBFUNDS.forEach((f,i)=>{
+    const keys=['car','edu','travel'];
+    const k=keys[i];
+    if(!k)return;
+    const target=parseFloat(f['今年目標'])||0;
+    const invested=parseFloat(f['今年累計']||f['累計投入'])||0;
+    const historical=parseFloat(f['歷年累計'])||0;
+    const gap=target-invested;
+    const setEl=(id,v)=>{const el=$(id);if(el)el.textContent=v;};
+    setEl(k+'-cur', fmt(historical||invested)); // 右上角顯示歷年累計
+    setEl(k+'-ti-show', fmt(target));
+    setEl(k+'-invested', fmt(invested));
+    const gapEl=$(k+'-gap');
+    if(gapEl){
+      gapEl.textContent=gap<=0?'已達標 +'+fmt(Math.abs(gap)):'還差 '+fmt(gap);
+      gapEl.className='sgv '+(gap<=0?'gp':'rp');
+    }
+    const pfEl=$(k+'-pf');
+    if(pfEl)pfEl.style.width=target?Math.min(100,Math.round(invested/target*100))+'%':'0%';
+  });
+}
+
+function renderFixed(){
+  // 更新固定開銷月合計
+  const total=FIXED_ITEMS.reduce((s,f)=>s+(parseFloat(f['月金額'])||0),0);
+  const el=$('fixed-total-val');
+  if(el)el.textContent=fmt(total);
+}
+
+// ── Google Apps Script URL ──
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxE8NJxFl-CI95FnXH1diGt4iuEVuH08CQ67thiWTlFXggmriows5J7iKl8XRHXL1sn/exec';
+
+// ── 頁面標題對應 ──
+const PAGE_TITLES={asset:'資產總覽',expense:'收支',record:'手動記帳',import:'匯入帳單',settings:'設定'};
+
+// ── 頁面切換 ──
+function showPage(id){
+  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.ntab,.dnav-item').forEach(b=>b.classList.remove('on'));
+  const pg=$('pg-'+id);
+  if(pg){pg.classList.add('on');pg.scrollTop=0;}
+  document.querySelectorAll(`[data-pg="${id}"]`).forEach(b=>b.classList.add('on'));
+  const titleEl=$('topbar-title');
+  if(titleEl)titleEl.textContent=PAGE_TITLES[id]||'家庭帳本';
+  const totalEl=$('topbar-total');
+  if(totalEl)totalEl.style.display=id==='asset'?'block':'none';
+}
+
+// ── 重新整理資料 ──
+async function refreshData(){
+  const btn=document.querySelector('[onclick="refreshData()"]');
+  if(btn){btn.style.opacity='0.4';btn.style.transform='rotate(180deg)';btn.style.transition='transform 0.5s';}
+  await loadAllData();
+  renderTabs();renderTrend();renderExpense();
+  if(btn){btn.style.opacity='1';btn.style.transform='rotate(0deg)';}
+}
+
+// ── 轉帳切換 ──
+function toggleTransfer(){
+  const type=$('rec-type').value;
+  const ch=$('rec-channel')?.value||'';
+  const row=$('transfer-row');
+  const subRow=$('subfund-row');
+  if(row)row.style.display=type==='轉帳'?'block':'none';
+  if(subRow)subRow.style.display=(type==='收入'&&ch==='國泰銀行')?'block':'none';
+}
+// 支付管道改變時也觸發
+document.addEventListener('DOMContentLoaded',function(){
+  const chSel=$('rec-channel');
+  if(chSel)chSel.addEventListener('change',toggleTransfer);
+});
+
+// ── 手動記帳存檔 ──
+async function submitRecord(){
+  const btn=$('record-btn');
+  const msg=$('record-msg');
+  const type=$('rec-type').value;
+  const person=$('rec-person').value;
+  const amount=$('rec-amount').value;
+  const channel=$('rec-channel').value;
+  const cat=$('rec-cat').value;
+  const date=$('rec-date').value;
+  const note=$('rec-note').value;
+
+  if(!amount||parseFloat(amount)<=0){
+    msg.textContent='請輸入金額！';
+    msg.style.color='#A32D2D';
+    return;
+  }
+  if(!date){
+    msg.textContent='請選擇日期！';
+    msg.style.color='#A32D2D';
+    return;
+  }
+
+  btn.textContent='儲存中...';
+  btn.disabled=true;
+  msg.textContent='';
+
+  const data={
+    action: 'addRecord',
+    日期: date,
+    類型: type,
+    記帳人: person,
+    支付管道: channel,
+    費用類別: cat,
+    金額: parseFloat(amount),
+    備註: note,
+    是否固定: $('rec-fixed')?.checked?'是':'否',
+    轉帳對象: type==='轉帳'?($('rec-transfer-to')?.value||''):''
+  };
+
+  try{
+    await fetch(APPS_SCRIPT_URL,{
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(data)
+    });
+    msg.textContent='✓ 已儲存！';
+    msg.style.color='#5A8060';
+    $('rec-amount').value='';
+    $('rec-note').value='';
+    if($('rec-fixed'))$('rec-fixed').checked=false;
+    if($('rec-subfund'))$('rec-subfund').checked=false;
+    btn.textContent='新增記帳';
+    btn.disabled=false;
+
+    // 子基金分配
+    if($('rec-subfund')?.checked&&type==='收入'){
+      const amt=parseFloat(amount);
+      // 從設定分頁讀取子基金比例
+      const subfundSettings=SUBFUNDS.length?SUBFUNDS:[];
+      // 找設定分頁的子基金比例
+      const ratioRows=channels.filter(c=>c.subfund); // 備用
+      // 直接從全域讀取
+      if(window._subfundRatios){
+        for(const sr of window._subfundRatios){
+          const subAmt=Math.round(amt*(parseFloat(sr.ratio)||0));
+          if(subAmt>0){
+            const now=new Date();
+            const ym=`${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}`;
+            await fetch(APPS_SCRIPT_URL,{
+              method:'POST',mode:'no-cors',
+              headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({action:'addSubfund',年月:ym,子基金名稱:sr.name,投入金額:subAmt,備註:'自動分配'})
+            }).catch(()=>{});
+          }
+        }
+      }
+    }
+    btn.textContent='新增記帳';
+    btn.disabled=false;
+  }catch(err){
+    msg.textContent='儲存失敗，請重試';
+    msg.style.color='#A32D2D';
+    btn.textContent='新增記帳';
+    btn.disabled=false;
+  }
+}
+function openDrawer(){
+  $('drawer-nav').classList.add('open');
+  $('drawer-overlay').classList.add('open');
+}
+function closeDrawer(){
+  $('drawer-nav').classList.remove('open');
+  $('drawer-overlay').classList.remove('open');
+}
+
+document.querySelectorAll('.ntab').forEach(btn=>{
+  btn.addEventListener('click',function(){showPage(this.dataset.pg);});
+});
+
+
+// ── 收支 ──
+let AM='3月';
+
+function calcYearly(){
+  const catMap={},chMap={};
+  let income=0,expense=0,fixed=0,flex=0;
+  MONTHS.forEach(m=>{
+    const d=MD[m];
+    income+=d.income;expense+=d.expense;fixed+=d.fixed;flex+=d.flex;
+    d.cats.forEach(c=>{catMap[c.n]=(catMap[c.n]||0)+c.v;});
+    d.channels.forEach(c=>{if(!chMap[c.n])chMap[c.n]={v:0,c:c.c};chMap[c.n].v+=c.v;});
+  });
+  return {income,expense,fixed,flex,
+    cats:Object.entries(catMap).map(([n,v])=>({n,v})).sort((a,b)=>b.v-a.v),
+    channels:Object.entries(chMap).map(([n,d])=>({n,v:d.v,c:d.c})).sort((a,b)=>b.v-a.v)
+  };
+}
+
+function renderTabs(){
+  $('mtabs').innerHTML=
+    `<div class="mt yr${AM==='全年'?' on':''}" data-m="全年">全年</div>`+
+    MONTHS.map(m=>`<div class="mt${m===AM?' on':''}" data-m="${m}">${m}</div>`).join('');
+  document.querySelectorAll('#mtabs .mt').forEach(el=>el.addEventListener('click',function(){AM=this.dataset.m;renderTabs();renderTrend();renderExpense();}));
 }
 
 function renderTrend(){
-  const data=[2500,3200,2800,3100,2900];
-  $('weekly-chart').innerHTML='<div style="display:flex;align-items:flex-end;height:100%;gap:8px">'+data.map((v,i)=>`<div style="flex:1;background:var(--accent);border-radius:2px 2px 0 0;height:${v/50}px;position:relative"><div style="position:absolute;bottom:-20px;left:0;right:0;font-size:9px;color:var(--ts);text-align:center">${i+1}週</div></div>`).join('')+'</div>';
+  const vals=MONTHS.map(m=>MD[m].expense),max=Math.max(...vals,1);
+  $('tbs').innerHTML=MONTHS.map((m,i)=>`<div class="tbc"><div class="tbb" style="height:${Math.max(2,Math.round(vals[i]/max*48))}px;background:${m===AM||AM==='全年'?'#98B8D8':'#C0D0E8'}"></div><div class="tbl${m===AM||AM==='全年'?' on':''}">${i+1}</div></div>`).join('');
 }
 
+function renderExpense(){
+  const isYear=AM==='全年';
+  const d=isYear?calcYearly():MD[AM];
+  const label=isYear?'年度':'當月';
+  const badge=isYear?'<span class="yr-badge">全年加總</span>':'';
+
+  // 更新年度總計
+  const yr=calcYearly();
+  if($('yr-inc'))$('yr-inc').textContent=yr.income?fmt(yr.income):'—';
+  if($('yr-exp'))$('yr-exp').textContent=yr.expense?fmt(yr.expense):'—';
+  if($('yr-bal'))$('yr-bal').textContent=yr.income?fmt(yr.income-yr.expense):'—';
+  if($('yr-pct'))$('yr-pct').textContent=yr.expense?pct(yr.expense,yr.income)+'支出率':'';
+
+  // 月平均（只算有資料的月份）
+  const now=new Date();
+  const passedMonths=MONTHS.filter(m=>MD[m].expense>0||MD[m].income>0).length||1;
+  const avgExp=yr.expense?Math.round(yr.expense/passedMonths):0;
+  const avgBal=yr.income?Math.round((yr.income-yr.expense)/passedMonths):0;
+  if($('yr-avg-exp'))$('yr-avg-exp').textContent=avgExp?fmt(avgExp):'—';
+  if($('yr-avg-bal'))$('yr-avg-bal').textContent=avgBal?fmt(avgBal):'—';
+  if($('yr-avg-hint'))$('yr-avg-hint').textContent=`${passedMonths}個月平均`;
+
+  $('lbl-inc').textContent=label+'收入';
+  $('lbl-exp').textContent=label+'支出';
+  $('lbl-bal').textContent=label+'結餘';
+  $('cat-title').innerHTML='支出分類'+badge+' <span style="font-size:10px;color:var(--tt);font-weight:400">點選看明細</span>';
+  $('ch-title').innerHTML='支付管道'+badge;
+  $('fix-title').innerHTML='固定 vs 彈性支出'+badge;
+
+  $('m-inc').textContent=d.income?fmt(d.income):'—';
+  $('m-exp').textContent=d.expense?fmt(d.expense):'—';
+  $('m-bal').textContent=d.income?fmt(d.income-d.expense):'—';
+
+  const mc=Math.max(...d.cats.map(c=>c.v),1);
+  $('cat-bars').innerHTML=d.cats.length
+    ?d.cats.map(c=>`<div class="br" data-cat="${c.n}"><div class="brl">${c.n}</div><div class="brw"><div class="brf" style="width:${Math.round(c.v/mc*100)}%;background:${CC[c.n]||'#888'}"></div></div><div class="bra">${fmt(c.v)}</div></div>`).join('')
+    :'<div style="font-size:12px;color:var(--tt)">尚無資料</div>';
+  document.querySelectorAll('.br').forEach(el=>el.addEventListener('click',function(){openModal(this.dataset.cat);}));
+
+  const mch=Math.max(...d.channels.map(c=>c.v),1);
+  $('ch-rows').innerHTML=d.channels.length
+    ?d.channels.map(c=>`<div style="display:flex;align-items:center;gap:7px;margin-bottom:6px"><div style="width:7px;height:7px;border-radius:50%;background:${c.c};flex-shrink:0"></div><div style="font-size:12px;color:var(--ts);flex:1">${c.n}</div><div style="width:70px;height:5px;background:var(--bs);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;background:${c.c};width:${Math.round(c.v/mch*100)}%"></div></div><div style="font-size:11px;width:56px;text-align:right">${fmt(c.v)}</div></div>`).join('')
+    :'<div style="font-size:12px;color:var(--tt)">尚無資料</div>';
+
+  $('fix-t').textContent=d.fixed?fmt(d.fixed):'—';
+  $('flex-t').textContent=d.flex?fmt(d.flex):'—';
+  $('fix-p').textContent=d.expense?pct(d.fixed,d.expense)+' 占比':'—';
+  $('flex-p').textContent=d.expense?pct(d.flex,d.expense)+' 占比':'—';
+  const fi=FIXED_ITEMS.length?FIXED_ITEMS.map(f=>({n:f['項目名稱'],v:parseFloat(f['月金額'])||0}))
+    :[{n:'保費',v:7164},{n:'補習費',v:8000},{n:'機車貸款',v:3125},{n:'Netflix',v:390}];
+  if($('fix-items'))$('fix-items').innerHTML='';
+}
+
+// ── 明細浮層 ──
 function openModal(cat){
   const items=TX[cat]||[],total=items.reduce((s,t)=>s+t.v,0),color=CC[cat]||'#888';
-  const modal=$('edit-transaction-modal');
-  modal.querySelector('.modal-ttl').textContent=cat+' — 每筆明細';
-  modal.querySelector('.modal-body').innerHTML=items.length
-    ?items.map(t=>`<div class="txr"><div class="txd" style="background:${color}"></div><div class="txi"><div class="txn">${t.n}</div><div class="txdt">${t.d}</div></div><div class="txa">-${fmt(t.v)}</div></div>`).join('')
+  $('m-ttl').textContent=cat+' — 每筆明細';
+  $('m-meta').textContent=(AM==='全年'?'全年':AM)+' · '+items.length+' 筆';
+  $('m-body').innerHTML=items.length
+    ?items.map(t=>`<div class="txr"><div class="txd" style="background:${color}"></div><div class="txi"><div class="txn">${t.n}</div><div class="txdt">${t.d} · ${t.dt}</div></div><div class="txa">-${fmt(t.v)}</div></div>`).join('')
     :'<div style="font-size:12px;color:var(--tt);padding:12px 0">尚無明細</div>';
+  $('m-tot').textContent='-'+fmt(total);
+  $('mbg').classList.add('on');
 }
+$('mbg').addEventListener('click',function(e){if(e.target===this)this.classList.remove('on');});
+$('m-cls').addEventListener('click',()=>$('mbg').classList.remove('on'));
 
+// ── 設定頁 ──
 const COLORS=['#1D9E75','#534AB7','#378ADD','#EF9F27','#D4537E','#888780','#E24B4A','#639922','#D85A30'];
 let selColor=COLORS[0];
 let channels=[
@@ -591,15 +1179,29 @@ function renderChannels(){
         <button class="btn-del ch-del-btn" data-id="${ch.id}">刪除</button>
       </div>
     </div>
+    <div class="edit-inline" id="ch-edit-${ch.id}">
+      <input type="text" id="ch-ei-${ch.id}" value="${ch.name}">
+      <select id="ch-eo-${ch.id}" style="width:90px"><option${ch.owner==='Sherry'?' selected':''}>Sherry</option><option${ch.owner==='Allen'?' selected':''}>Allen</option><option${ch.owner==='共同'?' selected':''}>共同</option></select>
+      <button class="btn-edit ch-save" data-id="${ch.id}">儲存</button>
+      <button class="btn-del ch-cancel" data-id="${ch.id}" style="border-color:var(--bdm);color:var(--ts)">取消</button>
+    </div>
   `).join('');
   document.querySelectorAll('.ch-edit-btn').forEach(btn=>btn.addEventListener('click',function(){
     const id=parseInt(this.dataset.id);
-    editingChId=id;
+    if(editingChId&&editingChId!==id)$('ch-edit-'+editingChId).classList.remove('on');
+    editingChId=id;$('ch-edit-'+id).classList.toggle('on');
+  }));
+  document.querySelectorAll('.ch-save').forEach(btn=>btn.addEventListener('click',function(){
+    const id=parseInt(this.dataset.id),ch=channels.find(c=>c.id===id);
+    if(ch){ch.name=$('ch-ei-'+id).value.trim()||ch.name;ch.owner=$('ch-eo-'+id).value;}
+    editingChId=null;renderChannels();
+  }));
+  document.querySelectorAll('.ch-cancel').forEach(btn=>btn.addEventListener('click',function(){
+    $('ch-edit-'+parseInt(this.dataset.id)).classList.remove('on');editingChId=null;
   }));
   document.querySelectorAll('.ch-del-btn').forEach(btn=>btn.addEventListener('click',function(){
     if(channels.length<=1){alert('至少保留一個支付管道');return;}
-    channels=channels.filter(c=>c.id!==parseInt(this.dataset.id));
-    renderChannels();
+    channels=channels.filter(c=>c.id!==parseInt(this.dataset.id));renderChannels();
   }));
 }
 
@@ -608,14 +1210,19 @@ function renderCats(){
   $('cat-tags').innerHTML=cats.map(c=>`
     <div class="tag">
       <div style="width:8px;height:8px;border-radius:50%;background:${c.color};flex-shrink:0"></div>
-      <span>${c.name}</span>
+      <span class="cat-name-btn" data-id="${c.id}" style="cursor:pointer">${c.name}</span>
       <span class="tag-del" data-id="${c.id}">×</span>
     </div>
   `).join('');
+  document.querySelectorAll('.cat-name-btn').forEach(el=>el.addEventListener('click',function(){
+    const id=parseInt(this.dataset.id),cat=cats.find(c=>c.id===id);
+    if(!cat)return;
+    const newName=prompt('修改類別名稱：',cat.name);
+    if(newName&&newName.trim()){cat.name=newName.trim();renderCats();}
+  }));
   document.querySelectorAll('.tag-del').forEach(btn=>btn.addEventListener('click',function(){
     if(cats.length<=1){alert('至少保留一個費用類別');return;}
-    cats=cats.filter(c=>c.id!==parseInt(this.dataset.id));
-    renderCats();
+    cats=cats.filter(c=>c.id!==parseInt(this.dataset.id));renderCats();
   }));
 }
 
@@ -629,329 +1236,52 @@ $('ch-add-btn').addEventListener('click',async function(){
   const owner=$('ch-owner').value;
   const colorMap={'Sherry':'#98B8D8','Allen':'#1D9E75','共同':'#EF9F27'};
   const color=colorMap[owner]||'#888780';
+  // 先更新畫面
   channels.push({id:nextId++,name,owner,color});
-  $('ch-input').value='';
-  renderChannels();
-  try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'addChannel',名稱:name,負責人:owner,顏色:color})});}catch(e){console.warn(e);}
+  $('ch-input').value='';renderChannels();
+  // 再寫入 Sheets
+  try{
+    await fetch(APPS_SCRIPT_URL,{
+      method:'POST',mode:'no-cors',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({action:'addChannel',名稱:name,負責人:owner,顏色:color})
+    });
+  }catch(e){console.warn('寫入失敗',e);}
 });
+$('ch-input').addEventListener('keydown',function(e){if(e.key==='Enter')$('ch-add-btn').click();});
 
 $('cat-add-btn').addEventListener('click',async function(){
   const name=$('cat-input').value.trim();if(!name)return;
   const color=selColor;
+  // 先更新畫面
   cats.push({id:nextId++,name,color});
   CC[name]=color;
-  $('cat-input').value='';
-  renderCats();
-  try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'addCat',名稱:name,顏色:color})});}catch(e){console.warn(e);}
-});
-
-function renderBankTabs(){
-  const tabs=$('bank-tabs');
-  tabs.innerHTML=BANKS.map(b=>`
-    <button class="bank-tab${CURRENT_BANK===b.名稱?' on':''}" onclick="selectBank('${b.名稱}')">${b.名稱}</button>
-  `).join('');
-  if(!CURRENT_BANK&&BANKS.length>0){
-    selectBank(BANKS[0].名稱);
-  }
-}
-
-function selectBank(name){
-  CURRENT_BANK=name;
-  renderBankTabs();
-  renderBankDetails();
-}
-
-function renderBankDetails(){
-  if(!CURRENT_BANK){
-    $('bank-initial').textContent='NT$0';
-    $('bank-current').textContent='NT$0';
-    $('bank-transactions').innerHTML='';
-    $('month-income').textContent='+NT$0';
-    $('month-expense').textContent='-NT$0';
-    $('month-net').textContent='NT$0';
-    return;
-  }
-
-  const bank=BANKS.find(b=>b.名稱===CURRENT_BANK);
-  if(!bank)return;
-
-  $('bank-initial').textContent='NT$'+fmt(bank.期初餘額);
-  $('bank-current').textContent='NT$'+fmt(bank.即時餘額);
-
-  // 該帳戶該月的交易
-  const year=CURRENT_MONTH.getFullYear();
-  const month=CURRENT_MONTH.getMonth()+1;
-  const monthTrans=TRANSACTIONS.filter(t=>{
-    if(t.支付管道!==CURRENT_BANK)return false;
-    const tDate=new Date(t.日期);
-    return tDate.getFullYear()===year&&tDate.getMonth()+1===month;
-  });
-
-  $('bank-transactions').innerHTML=monthTrans.length?monthTrans.map(t=>{
-    const color=t.類型==='收入'?'var(--green)':t.類型==='支出'?'var(--red)':'var(--purple)';
-    const sign=t.類型==='支出'?'-':t.類型==='轉帳'?'→':'+';
-    return `<div class="txr"><div class="txd" style="background:${color}"></div><div class="txi"><div class="txn">${t.費用類別}</div><div class="txdt">${t.日期} · ${t.記帳人}</div></div><div class="txa" style="color:${color}">${sign}${fmt(t.金額)}</div></div>`;
-  }).join(''):'<div style="font-size:12px;color:var(--tt);padding:8px 0">本月無交易</div>';
-
-  const monthIncome=monthTrans.filter(t=>t.類型==='收入').reduce((s,t)=>s+(parseFloat(t.金額)||0),0);
-  const monthExpense=monthTrans.filter(t=>t.類型==='支出').reduce((s,t)=>s+(parseFloat(t.金額)||0),0);
-  const monthNet=monthIncome-monthExpense;
-
-  $('month-income').textContent='+NT$'+fmt(monthIncome);
-  $('month-expense').textContent='-NT$'+fmt(monthExpense);
-  $('month-net').textContent=(monthNet>=0?'+':'')+'NT$'+fmt(Math.abs(monthNet));
-}
-
-function prevMonth(){
-  CURRENT_MONTH=new Date(CURRENT_MONTH.getFullYear(),CURRENT_MONTH.getMonth()-1,1);
-  updateMonthDisplay();
-  renderBankDetails();
-}
-
-function nextMonth(){
-  CURRENT_MONTH=new Date(CURRENT_MONTH.getFullYear(),CURRENT_MONTH.getMonth()+1,1);
-  updateMonthDisplay();
-  renderBankDetails();
-}
-
-function updateMonthDisplay(){
-  $('current-month').textContent=CURRENT_MONTH.getFullYear()+'年'+(CURRENT_MONTH.getMonth()+1)+'月';
-}
-
-function initSearchTransactions(){
-  const channels=[...new Set(TRANSACTIONS.map(t=>t.支付管道))];
-  const cats=[...new Set(TRANSACTIONS.map(t=>t.費用類別))];
-  
-  const chSelect=$('search-channel');
-  chSelect.innerHTML='<option value="">全部</option>'+channels.map(ch=>`<option>${ch}</option>`).join('');
-  
-  const catSelect=$('search-category');
-  catSelect.innerHTML='<option value="">全部</option>'+cats.map(cat=>`<option>${cat}</option>`).join('');
-  
-  const today=new Date();
-  const monthStart=new Date(today.getFullYear(),today.getMonth(),1);
-  $('search-date-from').value=monthStart.toISOString().split('T')[0];
-  $('search-date-to').value=today.toISOString().split('T')[0];
-}
-
-function performSearch(){
-  const dateFrom=$('search-date-from').value;
-  const dateTo=$('search-date-to').value;
-  const channel=$('search-channel').value;
-  const category=$('search-category').value;
-  const user=$('search-user').value;
-  const amountFrom=parseFloat($('search-amount-from').value)||0;
-  const amountTo=parseFloat($('search-amount-to').value)||Infinity;
-  const type=$('search-type').value;
-  const keyword=($('search-keyword').value||'').toLowerCase();
-
-  SEARCH_RESULTS=TRANSACTIONS.filter(t=>{
-    if(dateFrom&&t.日期<dateFrom)return false;
-    if(dateTo&&t.日期>dateTo)return false;
-    if(channel&&t.支付管道!==channel)return false;
-    if(category&&t.費用類別!==category)return false;
-    if(user&&t.記帳人!==user)return false;
-    const amount=parseFloat(t.金額)||0;
-    if(amount<amountFrom||amount>amountTo)return false;
-    if(type&&t.類型!==type)return false;
-    if(keyword&&!(t.備註||'').toLowerCase().includes(keyword))return false;
-    return true;
-  });
-
-  displaySearchResults();
-}
-
-function displaySearchResults(){
-  const resultsDiv=$('search-results');
-  const noResultsDiv=$('search-no-results');
-  const countDiv=$('search-results-count');
-  const bodyDiv=$('search-results-body');
-
-  if(SEARCH_RESULTS.length===0){
-    resultsDiv.style.display='none';
-    noResultsDiv.style.display='block';
-    return;
-  }
-
-  resultsDiv.style.display='block';
-  noResultsDiv.style.display='none';
-  countDiv.textContent=`搜尋結果：${SEARCH_RESULTS.length} 筆`;
-
-  bodyDiv.innerHTML=SEARCH_RESULTS.map((t,idx)=>{
-    const typeColor=t.類型==='收入'?'var(--green)':t.類型==='支出'?'var(--red)':'var(--purple)';
-    const amountSign=t.類型==='支出'?'-':t.類型==='轉帳'?'→':'+';
-    return `<tr style="border-bottom:0.5px solid var(--bd)">
-      <td style="padding:8px;color:var(--tp)">${t.日期}</td>
-      <td style="padding:8px;color:${typeColor};font-weight:500">${t.類型}</td>
-      <td style="padding:8px;color:var(--ts)">${t.記帳人}</td>
-      <td style="padding:8px;color:var(--ts)">${t.支付管道}</td>
-      <td style="padding:8px;color:var(--ts)">${t.費用類別}</td>
-      <td style="padding:8px;text-align:right;color:${typeColor};font-weight:500">${amountSign}${fmt(t.金額)}</td>
-      <td style="padding:8px;color:var(--ts);max-width:80px;overflow:hidden;text-overflow:ellipsis">${t.備註||'—'}</td>
-      <td style="padding:8px;color:var(--ts)">${t.是否固定==='是'?'✓':'—'}</td>
-      <td style="padding:8px;color:var(--ts)">${t.轉帳對象||'—'}</td>
-      <td style="padding:8px;text-align:center"><button class="btn-edit" onclick="openEditTransaction(${idx})">編輯</button></td>
-    </tr>`;
-  }).join('');
-}
-
-function openEditTransaction(idx){
-  const t=SEARCH_RESULTS[idx];
-  EDITING_TRANSACTION={index:idx,data:{...t}};
-
-  const form=$('edit-form');
-  form.innerHTML=`
-    <div class="fg"><div class="fl">日期</div><input type="date" id="edit-date" value="${t.日期}" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"></div>
-    <div class="g2">
-      <div class="fg"><div class="fl">類型</div><select id="edit-type" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"><option ${t.類型==='收入'?'selected':''}>收入</option><option ${t.類型==='支出'?'selected':''}>支出</option><option ${t.類型==='轉帳'?'selected':''}>轉帳</option></select></div>
-      <div class="fg"><div class="fl">記帳人</div><select id="edit-user" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"><option ${t.記帳人==='Sherry'?'selected':''}>Sherry</option><option ${t.記帳人==='Allen'?'selected':''}>Allen</option></select></div>
-    </div>
-    <div class="g2">
-      <div class="fg"><div class="fl">支付管道</div><select id="edit-channel" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">${[...new Set(TRANSACTIONS.map(x=>x.支付管道))].map(ch=>`<option ${t.支付管道===ch?'selected':''}>${ch}</option>`).join('')}</select></div>
-      <div class="fg"><div class="fl">費用類別</div><select id="edit-category" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)">${[...new Set(TRANSACTIONS.map(x=>x.費用類別))].map(cat=>`<option ${t.費用類別===cat?'selected':''}>${cat}</option>`).join('')}</select></div>
-    </div>
-    <div class="fg"><div class="fl">金額</div><input type="number" id="edit-amount" value="${t.金額}" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"></div>
-    <div class="fg"><div class="fl">備註</div><input type="text" id="edit-remark" value="${t.備註||''}" style="width:100%;padding:8px;border:0.5px solid var(--bdm);border-radius:var(--rm)"></div>
-    <div class="fg"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="edit-fixed" ${t.是否固定==='是'?'checked':''} style="cursor:pointer"> 固定支出</label></div>
-  `;
-
-  $('save-edit-btn').onclick=saveEditTransaction;
-  $('delete-edit-btn').onclick=deleteTransaction;
-  $('edit-transaction-modal').classList.add('on');
-}
-
-async function saveEditTransaction(){
-  if(!EDITING_TRANSACTION)return;
-  const newData={
-    日期:$('edit-date').value,
-    類型:$('edit-type').value,
-    記帳人:$('edit-user').value,
-    支付管道:$('edit-channel').value,
-    費用類別:$('edit-category').value,
-    金額:parseFloat($('edit-amount').value),
-    備註:$('edit-remark').value,
-    是否固定:$('edit-fixed').checked?'是':'否',
-    轉帳對象:''
-  };
-  SEARCH_RESULTS[EDITING_TRANSACTION.index]=newData;
-  try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'updateRecord',oldData:EDITING_TRANSACTION.data,newData:newData})});}catch(e){console.warn(e);}
-  alert('更新成功');
-  $('edit-transaction-modal').classList.remove('on');
-  displaySearchResults();
-}
-
-async function deleteTransaction(){
-  if(!EDITING_TRANSACTION||!confirm('確定要刪除？'))return;
-  const t=EDITING_TRANSACTION.data;
-  SEARCH_RESULTS.splice(EDITING_TRANSACTION.index,1);
-  try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'deleteRecord',date:t.日期,channel:t.支付管道,amount:t.金額})});}catch(e){console.warn(e);}
-  alert('刪除成功');
-  $('edit-transaction-modal').classList.remove('on');
-  displaySearchResults();
-}
-
-function resetSearch(){
-  $('search-date-from').value='';
-  $('search-date-to').value='';
-  $('search-channel').value='';
-  $('search-category').value='';
-  $('search-user').value='';
-  $('search-amount-from').value='';
-  $('search-amount-to').value='';
-  $('search-type').value='';
-  $('search-keyword').value='';
-  $('search-results').style.display='none';
-  $('search-no-results').style.display='none';
-  SEARCH_RESULTS=[];
-}
-
-async function submitRecord(){
-  const date=$('rec-date').value;
-  const cat=$('rec-cat').value;
-  const chan=$('rec-chan').value;
-  const user=$('rec-user').value;
-  const amt=parseFloat($('rec-amt').value)||0;
-  const desc=$('rec-desc').value;
-  const fixed=$('rec-fixed').checked;
-  const transfer=$('rec-transfer').checked;
-  const tgt=$('rec-tgt').value;
-
-  if(!date||!cat||!chan||amt<=0){alert('請填完整');return;}
-
+  $('cat-input').value='';renderCats();
+  // 再寫入 Sheets
   try{
     await fetch(APPS_SCRIPT_URL,{
-      method:'POST',
-      mode:'no-cors',
+      method:'POST',mode:'no-cors',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        action:'addRecord',
-        日期:date,
-        類型:'支出',
-        記帳人:user,
-        支付管道:chan,
-        費用類別:cat,
-        金額:amt,
-        備註:desc,
-        是否固定:fixed?'是':'否',
-        轉帳對象:tgt
-      })
+      body:JSON.stringify({action:'addCat',名稱:name,顏色:color})
     });
-  }catch(e){console.warn(e);}
-
-  alert('記帳成功');
-  $('rec-date').value=new Date().toISOString().split('T')[0];
-  [$('rec-cat'),$('rec-amt'),$('rec-desc')].forEach(e=>e.value='');
-  [$('rec-fixed'),$('rec-transfer')].forEach(e=>e.checked=false);
-}
-
-async function loadAllData(){
-  try{
-    const resp=await fetch(APPS_SCRIPT_URL+'?action=getData');
-    const json=await resp.json();
-    if(json.success){
-      const d=json.data||{};
-      TX={};
-      BANKS=d.banks||[];
-      TRANSACTIONS=d.transactions||[];
-      STOCKS=d.stocks||[];
-      SUBFUNDS=d.subfunds||[];
-      SETTINGS=d.settings||[];
-      CC=d.colors||{};
-      GUOTAI_TOTAL=d.guotaiTotal||0;
-      
-      // 組織交易資料
-      TRANSACTIONS.forEach(t=>{
-        const cat=t.費用類別;
-        if(!TX[cat])TX[cat]=[];
-        TX[cat].push({n:t.記帳人,d:t.日期,dt:t.支付管道,v:parseFloat(t.金額)||0});
-      });
-
-      CURRENT_MONTH=new Date();
-      updateMonthDisplay();
-      renderTabs();
-      renderChannels();
-      renderCats();
-      renderColorPick();
-      renderExpense();
-      renderTrend();
-      renderBankTabs();
-    }
-  }catch(e){console.warn('載入失敗',e);}
-}
-
-$('rec-transfer').addEventListener('change',function(){
-  $('rec-tgt').style.display=this.checked?'inline':'none';
+  }catch(e){console.warn('寫入失敗',e);}
 });
+$('cat-input').addEventListener('keydown',function(e){if(e.key==='Enter')$('cat-add-btn').click();});
 
+// ── 初始化 ──
+renderTabs();
+renderTrend();
+renderExpense();
+renderChannels();
+renderCats();
+renderColorPick();
+// 日期預設今天
 const today=new Date();
 const todayStr=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
 const dateEl=$('rec-date');
 if(dateEl)dateEl.value=todayStr;
 
-renderTabs();
-renderChannels();
-renderCats();
-renderColorPick();
+// 載入 Google Sheets 資料
 loadAllData();
 </script>
 </body>
